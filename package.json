@@ -10,6 +10,7 @@
     "clean:type": "rimraf ./dist",
     "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "mv-type": "tsx ./scripts/dts-mv.ts",
+    "prepare": "husky install",
     "build:ui": "pnpm run type:src && pnpm --filter './packages/**' run build && pnpm run mv-type"
   },
   "keywords": [],
