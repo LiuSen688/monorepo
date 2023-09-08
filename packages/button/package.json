@@ -1,0 +1,45 @@
+{
+  "name": "@monorepo-ui/button",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/monorepoUi-button.umd.js",
+  "module": "./dist/monorepoUi-button.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/monorepoUi-button.umd.js",
+      "module": "./dist/monorepoUi-button.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {},
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@monorepo-ui/shared": "workspace:^"
+  },
+  "devDependencies": {
+    "vue": "^3.3.4"
+  }
+}
