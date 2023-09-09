@@ -1,0 +1,41 @@
+{
+  "name": "@monorepo-ui/build",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/monorepoUi-shared.umd.js",
+  "module": "./dist/monorepoUi-shared.mjs",
+  "types": "./dist/index.d.ts",
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/monorepoUi-shared.umd.js",
+      "module": "./dist/monorepoUi-shared.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/lodash": "^4.14.197",
+    "@vitejs/plugin-vue": "^4.3.3",
+    "lodash": "^4.17.21",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "type-fest": "^4.3.1",
+    "typescript": "^5.2.2",
+    "vite-plugin-inspect": "^0.7.38"
+  }
+}
